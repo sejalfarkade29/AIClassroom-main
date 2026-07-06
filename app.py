@@ -1,4 +1,5 @@
-
+import sys
+sys.path.append("src")
 import streamlit as st
 
 from src.screens.home_screen import home_screen
