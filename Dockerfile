@@ -15,7 +15,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir setuptools wheel
+RUN pip install --no-cache-dir "setuptools<70" wheel
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
